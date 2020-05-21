@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 
-import { Image } from 'react-native';
-
 import {
   Container,
   Content,
@@ -21,7 +19,7 @@ import {
 
 const Sidebar = () => {
   return (
-    <Content style={{ backgroundColor: 'white' }}>
+    <Content style={styles.bgWhite}>
       <Card transparent>
         <CardItem transparent>
           <Left>
@@ -80,6 +78,12 @@ const Fifteen = () => {
       </Drawer>
     </Container>
   );
+};
+
+const styles = {
+  bgWhite: {
+    backgroundColor: 'white',
+  },
 };
 
 export default Fifteen;

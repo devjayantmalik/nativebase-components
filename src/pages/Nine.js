@@ -39,13 +39,10 @@ const renderCard = (item) => {
         </Left>
       </CardItem>
       <CardItem cardBody>
-        <Image
-          source={{ uri: item.image }}
-          style={{ height: 200, width: null, flex: 1 }}
-        />
+        <Image source={{ uri: item.image }} style={styles.cardImage} />
       </CardItem>
       <CardItem>
-        <Icon name="heart" style={{ color: '#ed4a6a' }} />
+        <Icon name="heart" style={styles.heartIcon} />
         <Text>{item.name}</Text>
       </CardItem>
     </Card>
@@ -60,6 +57,17 @@ const Nine = () => {
       </View>
     </Container>
   );
+};
+
+const styles = {
+  heartIcon: {
+    color: '#ed4a6a',
+  },
+  cardImage: {
+    height: 200,
+    width: null,
+    flex: 1,
+  },
 };
 
 export default Nine;

@@ -32,11 +32,7 @@ const Six = () => {
               <Text>This is the description about the world.</Text>
             </Body>
           </CardItem>
-          <CardItem
-            footer
-            button
-            bordered
-            onPress={() => alert('This is card footer.')}>
+          <CardItem footer button bordered>
             <Text>Jayant Malik</Text>
           </CardItem>
         </Card>
@@ -81,7 +77,7 @@ const Six = () => {
           <CardItem cardBody>
             <Image
               source={{ uri: 'https://picsum.photos/700/500' }}
-              style={{ height: 200, width: null, flex: 1 }}
+              style={styles.cardImage}
             />
           </CardItem>
           <CardItem>
@@ -105,6 +101,10 @@ const Six = () => {
       </Content>
     </Container>
   );
+};
+
+const styles = {
+  cardImage: { height: 200, width: null, flex: 1 },
 };
 
 export default Six;

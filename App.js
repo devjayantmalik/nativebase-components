@@ -1,5 +1,6 @@
 import React from 'react';
 
+/*
 import One from './src/pages/One';
 import Two from './src/pages/Two';
 import Three from './src/pages/Three';
@@ -14,6 +15,7 @@ import Eleven from './src/pages/Eleven';
 import Twelve from './src/pages/Twelve';
 import Thirteen from './src/pages/Thirteen';
 import Fourteen from './src/pages/Fourteen';
+*/
 import Fifteen from './src/pages/Fifteen';
 
 export default () => {

@@ -54,7 +54,7 @@ const Twelve = () => {
             <Picker
               mode="dropdown"
               placeholder="Select Payment Method"
-              placeholderStyle={{ color: '#bfc6ea' }}
+              placeholderStyle={styles.placeholderStyle}
               selectedValue={paymentMethod}
               onValueChange={(value) => setPaymentMethod(value)}>
               <Picker.Item label="Wallet" value="wallet" />
@@ -70,15 +70,27 @@ const Twelve = () => {
             rowSpan={5}
             bordered
             placeholder="Enter description about yourself."
-            style={{ margin: 5 }}
+            style={styles.marginFive}
           />
-          <Button full style={{ marginTop: 10 }}>
+          <Button full style={styles.marginTopTen}>
             <Text>Sign In</Text>
           </Button>
         </Form>
       </Content>
     </Container>
   );
+};
+
+const styles = {
+  marginFive: {
+    margin: 5,
+  },
+  marginTopTen: {
+    marginTop: 10,
+  },
+  placeholderStyle: {
+    color: '#bfc6ea',
+  },
 };
 
 export default Twelve;

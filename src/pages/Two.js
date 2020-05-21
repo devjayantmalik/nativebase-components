@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Text, Header, Content, Accordion } from 'native-base';
+import { Container, Header, Content, Accordion } from 'native-base';
 
 const dataArray = [
   { title: 'Element 1', content: 'Description about the item' },
@@ -18,16 +18,31 @@ const Two = () => {
         <Accordion
           icon="add"
           expandedIcon="remove"
-          iconStyle={{ color: 'green' }}
-          expandedIconStyle={{ color: 'red' }}
-          headerStyle={{ backgroundColor: 'gold' }}
-          contentStyle={{ backgroundColor: 'lightblue' }}
+          iconStyle={styles.colorGreen}
+          expandedIconStyle={styles.colorRed}
+          headerStyle={styles.bgGold}
+          contentStyle={styles.bgLightBlue}
           dataArray={dataArray}
           expanded={0}
         />
       </Content>
     </Container>
   );
+};
+
+const styles = {
+  colorGreen: {
+    color: 'green',
+  },
+  colorRed: {
+    color: 'red',
+  },
+  bgGold: {
+    backgroundColor: 'gold',
+  },
+  bgLightBlue: {
+    backgroundColor: 'lightblue',
+  },
 };
 
 export default Two;

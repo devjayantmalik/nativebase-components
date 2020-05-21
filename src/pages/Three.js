@@ -9,7 +9,7 @@ import {
   Text,
 } from 'native-base';
 
-const BUTTONS = ['Option 1', 'Option 2', 'Cancel', 'Exit'];
+// const BUTTONS = ['Option 1', 'Option 2', 'Cancel', 'Exit'];
 
 const BUTTONS_TWO = [
   { text: 'Option 1', icon: 'american-football', iconColor: '#2c8ef4' },

@@ -6,24 +6,39 @@ const Ten = () => {
 
   return (
     <Container>
-      <View style={{ flex: 1 }}>
+      <View style={styles.fullScreen}>
         <Fab
           active={active}
           direction={'up'}
-          style={{ backgroundColor: '#5067ff' }}
+          style={styles.bgFab}
           position="bottomRight"
           onPress={() => setActive(!active)}>
           <Icon name="share" />
-          <Button style={{ backgroundColor: '#34a34f' }}>
+          <Button style={styles.bgWhatsapp}>
             <Icon name="logo-whatsapp" />
           </Button>
-          <Button style={{ backgroundColor: '#3b5998' }}>
+          <Button style={styles.bgFacebook}>
             <Icon name="logo-facebook" />
           </Button>
         </Fab>
       </View>
     </Container>
   );
+};
+
+const styles = {
+  fullScreen: {
+    flex: 1,
+  },
+  bgFab: {
+    backgroundColor: '#5067ff',
+  },
+  bgFacebook: {
+    backgroundColor: '#3b5998',
+  },
+  bgWhatsapp: {
+    backgroundColor: '#34a34f',
+  },
 };
 
 export default Ten;

@@ -54,15 +54,24 @@ const Fourteen = () => {
         </Right>
       </Header>
       <Tabs>
-        <Tab style={{ backgroundColor: 'gold' }} heading="Tab 1">
+        <Tab style={styles.gold} heading="Tab 1">
           {_renderTab1()}
         </Tab>
-        <Tab style={{ backgroundColor: 'orange' }} heading="Tab 2">
+        <Tab style={styles.orange} heading="Tab 2">
           {_renderTab2()}
         </Tab>
       </Tabs>
     </Container>
   );
+};
+
+const styles = {
+  gold: {
+    backgroundColor: 'gold',
+  },
+  orange: {
+    backgroundColor: 'orange',
+  },
 };
 
 export default Fourteen;

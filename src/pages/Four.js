@@ -26,10 +26,7 @@ const Four = () => {
           <Text>20</Text>
         </Badge>
         <Badge>
-          <Icon
-            name="star"
-            style={{ fontSize: 16, color: 'white', lineHeight: 20 }}
-          />
+          <Icon name="star" style={styles.iconStyle} />
         </Badge>
         <Badge primary>
           <Text>I am a badge!</Text>
@@ -37,6 +34,14 @@ const Four = () => {
       </Content>
     </Container>
   );
+};
+
+const styles = {
+  iconStyle: {
+    fontSize: 16,
+    color: 'white',
+    lineHeight: 20,
+  },
 };
 
 export default Four;
